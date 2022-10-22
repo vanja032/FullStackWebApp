@@ -1,0 +1,544 @@
+@font-face {
+  font-family: MyCustomFont;
+  src: url("Good UnicornTTF.ttf");
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+}
+
+
+
+#stranica{
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    background-image: url("double-exposure-5384486_1920.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+}
+#stranica_1{
+    width: 100%;
+    min-height: 100vh;
+    display: table;
+    margin: 0;
+    position: relative;
+    background-image: url("double-exposure-5384486_1920_BGD_02.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*#black_mask{
+    background-color: rgba(1,1,1,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}*/
+#zaglavlje{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+    height: auto;
+    display: block;
+    position: relative;
+}
+#zaglavlje_1{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+    height: auto;
+    display: block;
+    position: relative;
+}
+#cover_img_1
+{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    /*background-image: url("double-exposure-5384486_1920.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+#korisnik_vrsta{
+    font-size: 2vw;
+    color: #cfcfcf;
+    margin-left: 2%;
+    margin-top: 1.22vw;
+    margin-bottom: 1.2vw;
+    display: block;
+    float: left;
+}
+.login{
+    font-size: 1.6vw;
+    color: #cfcfcf;
+    margin-left: 1%;
+    margin-top: 1.4vw;
+    margin-bottom: 1.2vw;
+    display: block;
+    float: right;
+}
+.login:hover{
+    cursor: pointer;
+    color: white;
+}
+#korisnik_crta{
+    font-size: 1.6vw;
+    color: #cfcfcf;
+    margin-left: 1%;
+    margin-top: 1.4vw;
+    margin-bottom: 1.2vw;
+    display: block;
+    float: right;
+}
+#korisnik_register{
+    margin-right: 2%;
+}
+#hr_1{
+    width: 96%;
+    height: 0.14vw;
+    margin-left: 2%;
+    padding: 0;
+    float: left;
+    background-color: #cfcfcf;
+    position: relative;
+}
+
+#hr_2{
+    width: 96%;
+    height: 0.14vw;
+    margin-left: 2%;
+    padding: 0;
+    float: left;
+    background-color: #cfcfcf;
+    position: fixed;
+    top: 4.2vw;
+    display: none;
+    z-index: 1000;
+}
+
+#hr_2_2{
+    width: 96%;
+    height: 0.2vw;
+    margin-left: 2%;
+    padding: 0;
+    float: left;
+    background-color: #cfcfcf;
+    position: fixed;
+    top: 4.65vw;
+    display: none;
+    z-index: 1000;
+}
+
+#meni_glavni{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+    height: auto;
+    display: block;
+    position: absolute;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999;
+}
+#glavni_logo{
+    width: 2vw;
+    float: left;
+    margin-left: 2%;
+    margin-top: 1.22vw;
+    margin-bottom: 1.2vw;
+}
+.meni{
+    font-size: 1.7vw;
+    color: #cfcfcf;
+    margin-left: 1%;
+    margin-top: 1.16vw;
+    margin-bottom: 1.17vw;
+    display: block;
+    float: right;
+}
+.meni:hover{
+    cursor: pointer;
+    color: white;
+}
+#meni_4{
+    margin-right: 2%;
+}
+#meni_3{
+    display: none;
+}
+
+#profilna_slika{
+    width: 10vw;
+    position: absolute;
+    left: 5vw;
+    top: calc(50% - 2vw);
+    border: 0.5vw solid white;
+    border-radius: 50%;
+    padding: 0.5vw;
+}
+
+#naslov_pocetna{
+    position: absolute;
+    top: calc(50% - 1vw);
+    left: 19vw;
+}
+#naslov_p{
+    color: white;
+    font-size: 5vw;
+}
+#naslov_p_02{
+    font-family: MyCustomFont;
+    color: white;
+    font-size: 4vw;
+}
+
+#naslov_pocetna_dobrodosli{
+    font-family: MyCustomFont;
+    position: absolute;
+    top: calc(50% - 1vw);
+    right: 8vw;
+    display: none;
+    text-align: center;
+    font-size: 4vw;
+}
+
+#futer{
+    display: block;
+    width: 100%;
+    height: 4.5vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#futer span{
+    font-size: 1.4vw;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 1.5vw;
+}
+#futer_1{
+    display: block;
+    width: 100%;
+    height: 4.5vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /*background-image: url("double-exposure-5384486_1920.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+#futer_1 span{
+    font-size: 1.4vw;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 1.5vw;
+}
+
+#forma_1{
+    width: 20vw;
+    height: auto;
+    display: block;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 1vw;
+    position: absolute;
+    left: 40vw;
+    top: 15vw;
+    border: 0.2vw solid white;
+    margin-bottom: 8vw;
+}
+#email_input_login{
+    width: 11vw;
+    font-size: 1.4vw;
+    height: auto;
+    display: block;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 2vw;
+    border: 0.2vw solid white;
+    position: relative;
+    margin-left: 3.4vw;
+    margin-top: 1vw; 
+    color: #525252;
+    outline: none;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+}
+
+#email_input_login::-webkit-input-placeholder { /* Edge */
+  color: white;
+}
+
+#email_input_login:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+#email_input_login::placeholder {
+  color: white;
+}
+
+.forma_1_text{
+    font-size: 1.5vw;
+    color: white;
+    width: 20vw;
+    display: block;
+    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    font-weight: bold;
+}
+
+#sign_up_error{
+    font-size: 1vw;
+    color: #e36868;
+    width: 20vw;
+    display: none;
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-weight: bold;
+}
+
+
+#pass_input_login{
+    width: 11vw;
+    font-size: 1.4vw;
+    height: auto;
+    display: block;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 2vw;
+    border: 0.2vw solid white;
+    position: relative;
+    margin-left: 3.4vw;
+    margin-top: 1vw; 
+    color: #525252;
+    outline: none;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+}
+
+#pass_input_login::-webkit-input-placeholder { /* Edge */
+  color: white;
+}
+
+#pass_input_login:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+#pass_input_login::placeholder {
+  color: white;
+}
+
+#prijava_login_bt{
+    width: 10vw;
+    font-size: 1.4vw;
+    height: auto;
+    display: block;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 2vw;
+    border: 0.2vw solid white;
+    position: relative;
+    margin-left: 4.9vw;
+    margin-top: 1vw; 
+    color: #525252;
+    outline: none;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+    color: white;
+    margin-bottom: 2vw;
+}
+
+#prijava_login_bt:hover{
+    cursor: pointer;
+    background-color: rgba(181,181,181,0.2);
+}
+
+#prijava_login_bt:disabled{
+    background-color: rgba(181,181,181,0.5);
+    color: rgba(181,181,181,1);
+    cursor: default;
+    border-color: rgba(181,181,181,1);
+}
+
+
+
+#registracija_login_bt{
+    width: 11vw;
+    font-size: 1.4vw;
+    height: auto;
+    display: block;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 2vw;
+    border: 0.2vw solid white;
+    position: relative;
+    margin-left: 4.6vw;
+    margin-top: 1vw; 
+    color: #525252;
+    outline: none;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+    color: white;
+    margin-bottom: 2vw;
+}
+
+#registracija_login_bt:hover{
+    cursor: pointer;
+    background-color: rgba(181,181,181,0.2);
+}
+
+#registracija_login_bt:disabled{
+    background-color: rgba(181,181,181,0.5);
+    color: rgba(181,181,181,1);
+    cursor: default;
+    border-color: rgba(181,181,181,1);
+}
+
+.inputs_signup{
+    width: 11vw;
+    font-size: 1.4vw;
+    height: auto;
+    display: block;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 2vw;
+    border: 0.2vw solid white;
+    position: relative;
+    margin-left: 3.4vw;
+    margin-top: 1vw; 
+    color: #525252;
+    outline: none;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+}
+
+.inputs_signup::-webkit-input-placeholder { /* Edge */
+  color: white;
+}
+
+.inputs_signup:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+.inputs_signup::placeholder {
+  color: white;
+}
+
+#korisnik_logout
+{
+    display: none;
+    margin-right: 2vw;
+}
+
+
+#izlozba_text{
+    color: /*#443c47*/white;
+    font-size: 1.8vw;
+    padding: 5vw;
+    padding-top: 3vw;
+    padding-bottom: 7vw;
+}
+
+#izlozba_text_pregled{
+    color: #443c47;
+    font-size: 1.8vw;
+    margin: 5vw;
+    margin-top: 3vw;
+    margin-bottom: 7vw;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 1vw;
+    height: 60vh;
+    overflow-y: auto;
+    padding: 3vw;
+    padding-left: 4vw;
+    /*padding-right: 2.2;*/
+    width: calc(72.2vw - 22px);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border: 0.4vw solid white;
+}
+
+
+/* width */
+/*#izlozba_text_pregled::-webkit-scrollbar {
+  width: 0;
+}
+*/
+/* Track */
+/*#izlozba_text_pregled::-webkit-scrollbar-track {
+  width: 0;
+}
+*/
+/* Handle */
+/*#izlozba_text_pregled::-webkit-scrollbar-thumb {
+  width: 0;
+}
+*/
+/* Handle on hover */
+/*#izlozba_text_pregled::-webkit-scrollbar-thumb:hover {
+  width: 0;
+}
+*/
+
+.clear_field_pregled
+{
+    width: 1.2vw;
+    margin-top: 1.2vw;
+}
+.clear_field_pregled:hover
+{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.pregled_spans
+{
+    line-height: 2vw;
+}
+
+#izlozba_text_profil
+{
+    color: #443c47;
+    font-size: 1.8vw;
+    margin: 5vw;
+    margin-top: 3vw;
+    margin-bottom: 7vw;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 1vw;
+    height: 60vh;
+    overflow-y: auto;
+    padding: 3vw;
+    padding-left: 4vw;
+    padding-right: 2.2;
+    text-align: center;
+    width: calc(72.2vw - 22px);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border: 0.4vw solid white;
+}
